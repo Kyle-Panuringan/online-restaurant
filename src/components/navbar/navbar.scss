@@ -1,9 +1,12 @@
 .navbar {
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
-	background: red;
-	width: auto;
+	background: transparent;
+	border: 1px solid white;
+	width: 100vw;
 	padding: 4px 7px;
+	z-index: 2;
 
 	ul {
 		list-style-type: none;
@@ -31,8 +34,8 @@
 				left: 50%;
 				transform: translateX(-50%);
 				width: 0%;
-				height: 2px;
-				border-radius: 5px;
+				height: 2.7px;
+				border-radius: 17px;
 				background: yellow;
 				transition: width 0.5s;
 			}
