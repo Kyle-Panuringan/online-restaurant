@@ -4,6 +4,7 @@
 	background: red;
 	width: auto;
 	padding: 4px 7px;
+
 	ul {
 		list-style-type: none;
 		display: flex;
@@ -12,7 +13,6 @@
 		margin-right: 37px;
 
 		li {
-			// border: 2px solid white;
 			padding: 7px;
 		}
 
@@ -45,4 +45,9 @@
 			}
 		}
 	}
+}
+
+#navbar-header {
+	color: white;
+	text-decoration: none;
 }
