@@ -3,6 +3,7 @@ import "./navbar.scss";
 const Navbar = () => {
 	return (
 		<div className="navbar">
+			<h1>Online Restaurant</h1>
 			<ul>
 				<li>
 					<a href="#">Menu</a>

@@ -1,10 +1,14 @@
 .navbar {
+	display: flex;
+	justify-content: space-between;
+	background: red;
+	width: auto;
+	padding: 4px 7px;
 	ul {
 		list-style-type: none;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-
 		margin-right: 37px;
 
 		li {
