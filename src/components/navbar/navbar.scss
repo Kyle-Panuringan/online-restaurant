@@ -2,13 +2,42 @@
 	ul {
 		list-style-type: none;
 		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		margin-right: 37px;
 
 		li {
 			// border: 2px solid white;
+			padding: 7px;
+		}
+
+		a {
+			color: white;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			text-decoration: none;
 			padding: 0 7px;
+			position: relative;
+			transition: color 0.5s;
+			&::after {
+				content: "";
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 0%;
+				height: 2px;
+				border-radius: 5px;
+				background: yellow;
+				transition: width 0.5s;
+			}
 			&:hover {
-				color: red;
+				color: yellow;
 				cursor: pointer;
+				&::after {
+					width: 90%;
+				}
 			}
 		}
 	}

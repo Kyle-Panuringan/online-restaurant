@@ -4,9 +4,15 @@ const Navbar = () => {
 	return (
 		<div className="navbar">
 			<ul>
-				<li>Menu</li>
-				<li>About Us</li>
-				<li>Contact Us</li>
+				<li>
+					<a href="#">Menu</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+				<li>
+					<a href="#">About Us</a>
+				</li>
 			</ul>
 		</div>
 	);
