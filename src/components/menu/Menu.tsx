@@ -1,19 +1,23 @@
-import Foods from "../foods/Foods";
+import { useAppSelector } from "../../app/hooks";
+import CategoryButtons from "../categoryButtons/CategoryButtons";
+import Food from "../foods/Food";
 import "./menu.scss";
 
 const Menu = () => {
+	const { foods } = useAppSelector((state) => state.products);
+	const categories = [
+		"all",
+		...Array.from(new Set(foods.map((food) => food.type))),
+	];
+
 	return (
 		<div className="menu">
 			<h2>~ Menu ~</h2>
 			<hr id="menu-line" />
 			<div className="menu-buttons">
-				<button>All</button>
-				<button>Burger</button>
-				<button>Pizza</button>
-				<button>Pasta</button>
-				<button>Dessert</button>
+				<CategoryButtons categories={categories} />
 			</div>
-			<Foods />
+			<Food />
 		</div>
 	);
 };

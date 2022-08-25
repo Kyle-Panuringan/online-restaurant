@@ -1,0 +1,18 @@
+.categories {
+	& > * {
+		font-size: 1.7rem;
+		text-transform: capitalize;
+		margin: 15px 7px;
+		padding: 7px 0;
+		width: 15%;
+		color: yellow;
+		background: none;
+		border: 2.7px solid yellow;
+		border-radius: 20px;
+		text-shadow: 5px 5px 7px black;
+		cursor: pointer;
+		&:hover {
+			color: red;
+		}
+	}
+}
