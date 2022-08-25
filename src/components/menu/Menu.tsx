@@ -1,3 +1,4 @@
+import Foods from "../foods/Foods";
 import "./menu.scss";
 
 const Menu = () => {
@@ -12,6 +13,7 @@ const Menu = () => {
 				<button>Pasta</button>
 				<button>Dessert</button>
 			</div>
+			<Foods />
 		</div>
 	);
 };

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./home.scss";
 const Home = () => {
 	return (
@@ -9,7 +10,7 @@ const Home = () => {
 				<br />
 				<i>Online Restaurant</i>
 			</h2>
-			<button>View Menu</button>
+			<Link to="/menu">View Menu</Link>
 			<span id="arrow-indicator">︽</span>
 		</div>
 	);
