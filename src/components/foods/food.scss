@@ -1,6 +1,23 @@
 .food {
+	background: red;
+	text-shadow: none;
+	margin: 0 7px;
+	.food-image-container {
+		height: auto;
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
 	img {
-		width: 100px;
-		height: 100px;
+		display: block;
+		width: 100%;
+		transition: all 0.4s ease-in-out;
+		cursor: pointer;
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+	p {
+		font-size: 1.7rem;
 	}
 }

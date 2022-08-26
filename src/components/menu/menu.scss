@@ -1,6 +1,5 @@
 .menu {
 	padding-top: 3%;
-	border: 2px solid red;
 	text-align: center;
 	h2 {
 		color: yellow;
@@ -13,5 +12,13 @@
 		border-radius: 20px;
 		height: 2px;
 		background-color: yellow;
+	}
+	.menu-foods {
+		background: green;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		justify-content: center;
+		gap: 7px;
+		padding: 7px 0;
 	}
 }

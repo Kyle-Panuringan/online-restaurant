@@ -18,9 +18,11 @@ const Menu = () => {
 			<div className="menu-buttons">
 				<CategoryButtons categories={categories} />
 			</div>
-			{foods.map((food, index) => {
-				return <Food key={index} food={food} />;
-			})}
+			<div className="menu-foods">
+				{foods.map((food, index) => {
+					return <Food key={index} food={food} />;
+				})}
+			</div>
 		</div>
 	);
 };
