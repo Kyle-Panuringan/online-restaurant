@@ -1,3 +1,4 @@
+import "./food.scss";
 interface FoodProps {
 	food: {
 		type: string;
@@ -9,7 +10,8 @@ interface FoodProps {
 
 const Food: React.FC<FoodProps> = ({ food }) => {
 	return (
-		<div>
+		<div className="food">
+			<img src={food.image} />
 			<p>{food.name}</p>
 		</div>
 	);
